@@ -28,12 +28,10 @@ class CopyrightOSMWidget extends StatelessWidget {
               ),
               recognizer: TapGestureRecognizer()
                 ..onTap = () async {
-                  final url = 'https://www.openstreetmap.org/copyright';
-                  if (await canLaunch(url)) {
-                    await launch(
-                      url,
-                      forceSafariVC: false,
-                    );
+                  final url =
+                      Uri.parse('https://www.openstreetmap.org/copyright');
+                  if (await canLaunchUrl(url)) {
+                    await launchUrl(url);
                   }
                 },
               children: [

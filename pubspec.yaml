@@ -17,7 +17,8 @@ dependencies:
   dio: ^4.0.6
   uuid: ^3.0.6
   flutter_osm_interface:
-    path: ./flutter_osm_interface
+    git:
+      url: https://github.com/amaran-futura/flutter_osm_interface.git
 dev_dependencies:
   flutter_test:
     sdk: flutter
